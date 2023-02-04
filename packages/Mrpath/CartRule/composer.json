@@ -1,0 +1,28 @@
+{
+    "name": "mrpath/laravel-cart-rule",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@mrpath.com"
+        }
+    ],
+    "require": {
+        "mrpath/laravel-core": "dev-master",
+        "mrpath/laravel-rule": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mrpath\\CartRule\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mrpath\\CartRule\\Providers\\CartRuleServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,151 @@
+{
+    "name": "mrpath/mrpath",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "astrotomic/laravel-translatable": "*",
+        "bagistobrasil/bagisto-product-social-share": "^0.1.2",
+        "barryvdh/laravel-debugbar": "^3.1",
+        "barryvdh/laravel-dompdf": "^0.8.5|^0.9.0",
+        "diglactic/laravel-breadcrumbs": "^7.0",
+        "doctrine/dbal": "^2.9",
+        "enshrined/svg-sanitize": "^0.15.0",
+        "facade/ignition": "^2.3.6",
+        "fakerphp/faker": "^1.14",
+        "fideloper/proxy": "^4.2",
+        "flynsarmy/db-blade-compiler": "^5.5",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "intervention/image": "dev-master",
+        "kalnoy/nestedset": "^6.0",
+        "khaled.alshamaa/ar-php": "^6.0.0",
+        "konekt/concord": "^1.2",
+        "laravel/framework": "^8.75",
+        "laravel/sanctum": "^2.11",
+        "laravel/scout": "^8.0",
+        "laravel/socialite": "^5.0",
+        "laravel/tinker": "^2.5",
+        "laravel/ui": "^3.0",
+        "maatwebsite/excel": "^3.0.1",
+        "mrpathcloud/legacy-api": "dev-main",
+        "mrpathcloud/rest-api": "dev-main",
+        "paypal/paypal-checkout-sdk": "1.0.1",
+        "php-open-source-saver/jwt-auth": "^1.4",
+        "prettus/l5-repository": "^2.6"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^5.10",
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "replace": {
+        "mrpathcloud/laravel-user": "v0.1.0",
+        "mrpathcloud/laravel-admin": "v0.1.0",
+        "mrpathcloud/laravel-ui": "v0.1.0",
+        "mrpathcloud/laravel-core": "v0.1.0",
+        "mrpathcloud/laravel-attribute": "v0.1.0",
+        "mrpathcloud/laravel-checkout": "v0.1.0",
+        "mrpathcloud/laravel-customer": "v0.1.0",
+        "mrpathcloud/laravel-inventory": "v0.1.0",
+        "mrpathcloud/laravel-category": "v0.1.0",
+        "mrpathcloud/laravel-product": "v0.1.0",
+        "mrpathcloud/laravel-shop": "v0.1.0",
+        "mrpathcloud/laravel-theme": "v0.1.0",
+        "mrpathcloud/laravel-shipping": "v0.1.0",
+        "mrpathcloud/laravel-payment": "v0.1.0",
+        "mrpathcloud/laravel-sales": "v0.1.0",
+        "mrpathcloud/laravel-tax": "v0.1.0",
+        "mrpathcloud/laravel-api": "v0.1.0",
+        "mrpathcloud/laravel-paypal": "v0.1.0",
+        "mrpathcloud/laravel-discount": "v0.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/",
+            "Mrpath\\User\\": "packages/Mrpath/User/src",
+            "Mrpath\\Admin\\": "packages/Mrpath/Admin/src",
+            "Mrpath\\Ui\\": "packages/Mrpath/Ui/src",
+            "Mrpath\\Category\\": "packages/Mrpath/Category/src",
+            "Mrpath\\Checkout\\": "packages/Mrpath/Checkout/src",
+            "Mrpath\\Attribute\\": "packages/Mrpath/Attribute/src",
+            "Mrpath\\Shop\\": "packages/Mrpath/Shop/src",
+            "Mrpath\\Core\\": "packages/Mrpath/Core/src",
+            "Mrpath\\Customer\\": "packages/Mrpath/Customer/src",
+            "Mrpath\\Inventory\\": "packages/Mrpath/Inventory/src",
+            "Mrpath\\Product\\": "packages/Mrpath/Product/src",
+            "Mrpath\\Theme\\": "packages/Mrpath/Theme/src",
+            "Mrpath\\Shipping\\": "packages/Mrpath/Shipping/src",
+            "Mrpath\\Payment\\": "packages/Mrpath/Payment/src",
+            "Mrpath\\Paypal\\": "packages/Mrpath/Paypal/src",
+            "Mrpath\\Sales\\": "packages/Mrpath/Sales/src",
+            "Mrpath\\Tax\\": "packages/Mrpath/Tax/src",
+            "Mrpath\\CatalogRule\\": "packages/Mrpath/CatalogRule/src",
+            "Mrpath\\CartRule\\": "packages/Mrpath/CartRule/src",
+            "Mrpath\\Rule\\": "packages/Mrpath/Rule/src",
+            "Mrpath\\CMS\\": "packages/Mrpath/CMS/src",
+            "Mrpath\\Velocity\\": "packages/Mrpath/Velocity/src",
+            "Mrpath\\BookingProduct\\": "packages/Mrpath/BookingProduct/src",
+            "Mrpath\\SocialLogin\\": "packages/Mrpath/SocialLogin/src",
+            "Mrpath\\DebugBar\\": "packages/Mrpath/DebugBar/src",
+            "Mrpath\\Marketing\\": "packages/Mrpath/Marketing/src",
+            "Mrpath\\Notification\\": "packages/Mrpath/Notification/src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\API\\": "tests/api/",
+            "Tests\\Functional\\": "tests/functional/",
+            "Tests\\Trigger\\": "tests/trigger/",
+            "Tests\\Unit\\": "tests/unit/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+                "laravel/dusk"
+            ]
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate",
+            "Mrpath\\Core\\Events\\ComposerEvents::postCreateProject"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ],
+        "test": [
+            "set -e",
+            "@php artisan migrate:fresh --env=testing",
+            "vendor/bin/codecept run unit",
+            "vendor/bin/codecept run functional",
+            "vendor/bin/codecept run trigger"
+        ],
+        "test-win": [
+            "@set -e",
+            "@php artisan migrate:fresh --env=testing",
+            "vendor\\bin\\codecept.bat run unit",
+            "vendor\\bin\\codecept.bat run functional",
+            "vendor\\bin\\codecept.bat run trigger"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

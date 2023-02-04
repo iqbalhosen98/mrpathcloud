@@ -1,0 +1,30 @@
+{
+    "name": "mrpath/laravel-booking-product",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@mrpath.com"
+        }
+    ],
+    "require": {
+        "mrpath/laravel-core": "dev-master",
+        "mrpath/laravel-rule": "dev-master",
+        "mrpath/laravel-sales": "dev-master",
+        "mrpath/laravel-product": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mrpath\\BookingProduct\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mrpath\\BookingProduct\\Providers\\BookingProductServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,27 @@
+{
+    "name": "mrpath/laravel-attribute",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@mrpath.com"
+        }
+    ],
+    "require": {
+        "mrpath/laravel-core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mrpath\\Attribute\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mrpath\\Attribute\\Providers\\AttributeServiceProvider"
+            ],
+            "aliases": { }
+        }
+    },
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,24 @@
+{
+    "name": "mrpath/laravel-checkout",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Prashant Singh",
+            "email": "prashant.singh852@mrpath.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mrpath\\Checkout\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mrpath\\Checkout\\Providers\\CheckoutServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}

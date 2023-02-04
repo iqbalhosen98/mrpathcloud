@@ -1,0 +1,29 @@
+{
+    "name": "mrpath/laravel-admin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@mrpath.com"
+        }
+    ],
+    "require": {
+        "mrpath/laravel-user": "dev-master",
+        "mrpath/laravel-ui": "dev-master",
+        "mrpath/laravel-core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mrpath\\Admin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mrpath\\Admin\\Providers\\AdminServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

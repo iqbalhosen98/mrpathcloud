@@ -1,0 +1,28 @@
+{
+    "name": "mrpath/laravel-catalog-rule",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@mrpath.com"
+        }
+    ],
+    "require": {
+        "mrpath/laravel-core": "dev-master",
+        "mrpath/laravel-rule": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mrpath\\CatalogRule\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mrpath\\CatalogRule\\Providers\\CatalogRuleServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

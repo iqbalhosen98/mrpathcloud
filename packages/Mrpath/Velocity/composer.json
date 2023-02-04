@@ -1,0 +1,34 @@
+{
+    "name": "mrpath/velocity-theme",
+    "description": "Velocity Theme for Mrpath.",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "viveksharma-mrpath",
+            "email": "viveksh047@mrpath.com"
+        },
+        {
+            "name": "Shubham Mehrotra",
+            "email": "shubhammehrotra.symfony@mrpath.com"
+        }
+    ],
+
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mrpath\\Velocity\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mrpath\\Velocity\\Providers\\VelocityServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+
+    "minimum-stability": "dev"
+}
